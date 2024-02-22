@@ -49,7 +49,7 @@ export default function App() {
     setListFriend((friends) => friends.map((friend) => friend.id === selectFriend.id ? { ...friend, balance: friend.balance + value } : friend))
     setSelectFriend(null)
   }
-  return <div className="app">
+  return <><h1 className="heading">Eat-n-Split</h1>  <div className="app">
 
     <div className="sidebar">
 
@@ -64,6 +64,7 @@ export default function App() {
     {selectFriend && <FormSplitBill selectedFriend={selectFriend} onSplitBill={handleSubmitBill} key={selectFriend.id} />}
 
   </div>
+  </>
 }
 
 function FriendList({ listFriend, onSelection, selectFriend }) {

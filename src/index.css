@@ -167,3 +167,8 @@ form h2 {
   letter-spacing: -0.5px;
   margin-bottom: 1.6rem;
 }
+.heading {
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 4rem;
+}
